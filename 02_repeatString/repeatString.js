@@ -1,8 +1,13 @@
 const repeatString = function(string, numOfIterations) {
     // Initialize empty string that will store the repeated string, and store in variable
+    let repeatedString = '';
     // Make loop based on number of iterations to add to string x times
-    // in the loop, add the given string to the new string
+    for (let i = 0; i < numOfIterations; i++) {
+        // in the loop, add the given string to the new string
+        repeatedString += string;
+    }
     // return new string that contains the repeated string based on number of iterations
+    return repeatedString;
 };
 
 // Do not edit below this line
