@@ -1,4 +1,8 @@
 const repeatString = function(string, numOfIterations) {
+    // If number of iterations is negative (invalid), return error string
+    if (numOfIterations < 0) {
+        return 'ERROR';
+    }
     // Initialize empty string that will store the repeated string, and store in variable
     let repeatedString = '';
     // Make loop based on number of iterations to add to string x times
