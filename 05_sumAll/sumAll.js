@@ -1,6 +1,9 @@
 const sumAll = function(startNum, endNum) {
     // if start number or end number is negative, return error string
-    if (startNum < 0 || endNum < 0) {
+    // or if start number or end number is not a number, return error string
+    if ( (startNum < 0 || endNum < 0) ||
+         (typeof startNum !== 'number' || typeof endNum !== 'number')
+    ) {
         return 'ERROR';
     }
     // if start number is bigger than end number, swap
