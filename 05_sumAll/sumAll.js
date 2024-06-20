@@ -1,4 +1,10 @@
 const sumAll = function(startNum, endNum) {
+    // if start number is bigger than end number, swap
+    if (startNum > endNum) {
+        let temp = endNum;
+        endNum = startNum;
+        startNum = temp;
+    }
     // initialize number to 0 and store as variable
     let summedNum = 0;
     // loop starting at start number and ending on ending number (inclusively)
